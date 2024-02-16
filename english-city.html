@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Words Shop and Words Bucket</title>
+  <style>
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 20px;
+    }
+    .words-shop, .words-bucket {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 45%;
+    }
+    .word-item {
+      margin-bottom: 5px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 5px 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="words-shop">
+      <h2>Words Shop</h2>
+      <div class="word-item">Word 1 <button class="btn">Move to Bucket</button></div>
+      <div class="word-item">Word 2 <button class="btn">Move to Bucket</button></div>
+      <div class="word-item">Word 3 <button class="btn">Move to Bucket</button></div>
+    </div>
+    <div class="words-bucket">
+      <h2>Words Bucket</h2>
+      <div class="word-item">Bucket Word 1 <button class="btn">Mark as Learned</button><button class="btn">Remove</button></div>
+      <div class="word-item">Bucket Word 2 <button class="btn">Mark as Learned</button><button class="btn">Remove</button></div>
+      <div class="word-item">Bucket Word 3 <button class="btn">Mark as Learned</button><button class="btn">Remove</button></div>
+      <button class="btn">Delete All Learned</button>
+    </div>
+  </div>
+</body>
+</html>
